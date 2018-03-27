@@ -1,8 +1,8 @@
 export class Heart {
     constructor(
         public full: boolean,
-        public urlFullHeart = '/assets/full_heart.png',
-        public urlEmptyHeart = '/assets/empty_heart.png'
+        public urlFullHeart = '/assets/full_heart.svg',
+        public urlEmptyHeart = '/assets/empty_heart.svg'
     ) {}
     public showHeart(): string {
         if (this.full === true ) {
