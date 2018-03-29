@@ -33,7 +33,7 @@ export class PanelComponent implements OnInit, OnDestroy {
     if (this.roundPhrase.phrasePtBr === this.answer) {
       this.round++;
       this.progress = this.progress + ( 100 / this.phrasis.length);
-      if (this.round === 4) {
+      if (this.round === this.phrasis.length) {
         this.finishGame.emit('vitoria');
       }
       this.updateRound();

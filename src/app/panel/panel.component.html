@@ -15,7 +15,7 @@
                 <h6> {{ instruction }} </h6>
                 <p>{{ roundPhrase.phraseEng }}</p>
                 <div class="form-group">
-                    <input class="form-control" rows="3" (input)="updateAnswer($event)" [value]="answer">
+                    <input class="form-control" rows="3" (input)="updateAnswer($event)" (keyup.enter)="verifyAnswer()" [value]="answer">
                 </div>
             </div>
         </div>
